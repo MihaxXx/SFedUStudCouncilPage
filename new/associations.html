@@ -1,10 +1,9 @@
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style type="text/css">p {
     color: #333;
 }
 
 .__ld-card-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 350px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -35,6 +34,24 @@
     background-position: center center;
     background-size: cover;
 }
+
+@media (max-width: 576px) {
+    .__ld-card-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        border-top: 1px solid #aeaeae;
+    }
+}
+
+@media (min-width: 577px) {
+    .__ld-card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 350px;
+    }
+}
+
 </style>
 <div class="__ld-wrapper">
     <div class="__ld-card-wrapper">
